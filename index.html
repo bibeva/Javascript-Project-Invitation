@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Invitation App</title>
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+  <!-- custom css -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="wrapper">
+    <div class="invitation">
+      <header id="header">
+        <h1>Invite people</h1>
+      </header>
+      <main class="main">	
+        <form id="inviteForm">
+          <input type="text" name="name" placeholder="Invite Someone">
+          <button type="submit" name="submit" value="submit">Submit</button>
+        </form>
+        <!-- 
+        <div class="showHide">
+          <label>Hide those who haven't responded</label>
+          <input type="checkbox">
+        </div> 
+        -->
+        <ul id="invitedList">
+          <li>
+            <span>John Smith</span>
+            <label>Confirmed<input type="checkbox"></label>
+            <button>edit</button>
+            <button>remove</button>
+          </li> 
+          <li>
+            <span>Amanda Scott</span>
+            <label>Confirmed<input type="checkbox"></label>
+            <button>edit</button>
+            <button>remove</button>
+          </li> 
+        </ul>	
+      </main>
+    </div>
+  </div>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
