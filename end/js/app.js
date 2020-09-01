@@ -3,7 +3,10 @@ const input = document.querySelector('input');
 const main = document.querySelector('.main');
 const ul = document.querySelector('#invitedList');
 
-// create li 
+/*
+1. create li
+------------
+*/ 
 function createLi() {
   const li = document.createElement('li');
   const span = document.createElement('span');
@@ -38,7 +41,10 @@ form.addEventListener('submit', (event) => {
   }
 }); 
 
-// toggle class
+/*
+2. Add responded class
+----------------------
+*/ 
 ul.addEventListener('change', (event) => {
   const checkbox = event.target;
   const checked = checkbox.checked;
@@ -50,7 +56,10 @@ ul.addEventListener('change', (event) => {
   }
 });
 
-// button actions
+/*
+3. Button actions
+-----------------
+*/ 
 ul.addEventListener('click', (event) => {
   if(event.target.tagName === 'BUTTON') {
     const button = event.target;
@@ -77,7 +86,10 @@ ul.addEventListener('click', (event) => {
   }
 });
 
-// create and append elements
+/*
+4. create and append elements
+-----------------------------
+*/ 
 const div = document.createElement('div');
 div.className = 'showHide';
 const filterLabel = document.createElement('label');
